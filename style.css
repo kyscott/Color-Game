@@ -38,7 +38,7 @@ h1 {
 }
 
 button {
-   background-color: none;
+   background-color: transparent;
    border: 0;
    text-transform: uppercase;
    font-weight: 700;
