@@ -52,7 +52,12 @@ var game = {
          } else {
             squares[i].style.display = 'none';
          }
+      }
+      game.checkGame();
+   },
 
+   checkGame: function() {
+      for (var i = 0; i < squares.length; i++) {
          squares[i].addEventListener('click', function() {
             var clickedColor = this.style.backgroundColor;
             if (clickedColor === pickedColor) {
@@ -65,7 +70,7 @@ var game = {
                messageDisplay.innerHTML = 'Try Again...';
             }
          })
-      };
+      }
    },
 
    changeColors: function(color) {
